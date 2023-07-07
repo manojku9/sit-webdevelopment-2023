@@ -1,0 +1,21 @@
+/* Select the element with class "my-element" */
+.my-element {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Select all <h1> elements */
+h1 {
+  text-align: center;
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* Select the element with ID "my-button" */
+#my-button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
