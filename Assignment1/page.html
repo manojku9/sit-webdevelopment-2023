@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with GPT</title>
+  <style>
+    .chat-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .chat-messages {
+      margin-bottom: 20px;
+    }
+    .user-message {
+      background-color: #e2fce3;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .bot-message {
+      background-color: #eaeaea;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-messages">
+      <div class="bot-message">
+        <p>Welcome to the Chat with GPT!</p>
+      </div>
+    </div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    const chatForm = document.getElementById('chat-form');
+    const userInput = document.getElementById('user-input');
+    const chatMessages = document.querySelector('.chat-messages');
+
+    chatForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const userMessage = userInput.value;
+      displayUserMessage(userMessage);
+      // Send user message to backend or handle it with GPT
+      // Get response from backend or generate response with GPT
+      const botMessage = 'This is a sample response from GPT.';
+      displayBotMessage(botMessage);
+      userInput.value = '';
+    });
+
+    function displayUserMessage(message) {
+      const userDiv = document.createElement('div');
+      userDiv.classList.add('user-message');
+      userDiv.innerHTML = `<p>${message}</p>`;
+      chatMessages.appendChild(userDiv);
+    }
+
+    function displayBotMessage(message) {
+      const botDiv = document.createElement('div');
+      botDiv.classList.add('bot-message');
+      botDiv.innerHTML = `<p>${message}</p>`;
+      chatMessages.appendChild(botDiv);
+    }
+  </script>
+</body>
+</html>

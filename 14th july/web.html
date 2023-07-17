@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Value Check</title>
+  <script>
+    function checkValue() {
+      var value = document.getElementById("inputValue").value;
+      
+      if (isNaN(value)) {
+        document.getElementById("result").innerHTML = "The value is an alphabet.";
+      } else {
+        document.getElementById("result").innerHTML = "The value is a number.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="inputValue">Enter a value:</label>
+  <input type="text" id="inputValue">
+  <button onclick="checkValue()">Check</button>
+  <p id="result"></p>
+</body>
+</html>

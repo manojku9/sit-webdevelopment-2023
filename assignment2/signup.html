@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Registration Form</title>
+</head>
+<style>
+  body{
+    background-color: blue;
+  }
+</style>
+<body>
+  <h1>Course Registration Form</h1>
+  
+  <form action="submit_registration.txt" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ><br><br>
+
+    <label for="Sic">SIC:</label>
+    <input type="text" id="sic" name="sic" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="Age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <label for="phone number">Phone number:</label>
+    <input type="number" id="phone number" name="phone number" required><br><br>
+
+    <label for="Gender">Gender:</label>
+    <select id="gender" name="Gender">
+      <option value="none">Choose gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select><br><br>
+
+    <label for="type">Type:</label>
+    <select id="Type" name="Type">
+      <option value="Hostelite">Hostelite</option>
+      <option value="Localite">Localite</option>
+    </select><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    
+    
+    <label for="Address">Address:</label><br>
+    <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br><br>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+      <option value="none">Choose course</option>
+      <option value="web development">web development</option>
+      <option value="azure masters">Azure masters</option>
+      <option value="DSA">Data Structure</option>
+      <option value="cyber security">Cyber security</option>
+    </select><br><br>
+    
+    
+<a href="signupsuccess.html"><button type="submit">Sign Up</button></a>
+  </form>
+</body>
+</html>

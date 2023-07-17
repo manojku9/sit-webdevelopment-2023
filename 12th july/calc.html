@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <script>
+        const operator= prompt("enter operator:+,-,*,/");
+        const number1=parseFloat(prompt("Enter the first operandL"));
+        const number2=parseFloat(prompt("Enter the second operand:"));
+        let result;
+        if(operator =='+')
+        {
+            result=number1+number2;
+        }
+        else if(operator=='-')
+        {
+            result=number1-number2;
+        }
+        document.write(`${number1} ${operator} ${number2} = ${result}` );
+    </script>
+</body>
+</html>
