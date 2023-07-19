@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: skyblue;
+    }
+    #blog-container{
+        background-color: orange;
+    }
+    hr{
+        height: 10px;
+        background-color: #ccc;
+    }
+    button{
+        background-color: red;
+  color: yellow;
+    }
+    h3{
+        color: darkmagenta;
+    }
+</style>
+<body>
+    <h1>All Blogs</h1>
+    <h2>Post a Blog</h2>
+    <form id="create-blog">
+        <input type="text" id="title" placeholder="Enter title">
+        <input type="text" id="description" placeholder="Enter description">
+        <button type="submit">Create Post</button>
+    </form>
+    <div id="blog-container">
+
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": 123
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": 2
+    },
+    {
+      "username": "ironman",
+      "email": "ironman@gmail.com",
+      "password": "ironman",
+      "id": 3
+    },
+    {
+      "username": "manoj",
+      "email": "lopintimanoj957@gmail.com",
+      "password": "snapseed",
+      "id": 4
+    },
+    {
+      "username": "manoj",
+      "email": "lopintimanoj957@gmail.com",
+      "password": "snapseed",
+      "id": 5
+    },
+    {
+      "username": "nakshatra",
+      "email": "nakshatra@gmail.com",
+      "password": "naina123",
+      "id": 6
+    },
+    {
+      "username": "revati",
+      "email": "revati@gmail.com",
+      "password": "picsart",
+      "id": 7
+    }
+  ],
+  "blogs": []
+}
