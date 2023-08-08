@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+nav ul {
+    margin: 12px 10px;
+    padding: 0px 10px;
+}
+
+nav a {
+    padding: 2px 10px;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #0CAA41;
+}
+
+nav a img {
+    content: url('../static/icons/briefcase.png');
+    height: 32px;
+    width: 32px;
+}
+
+nav a:hover img {
+    content: url('../static/icons/briefcase-white.png');
+}
+
+#dotted-background {
+    height: 80%;
+    width: 100%;
+    background-image: url('../static/images/picthai-free-vector60-3-01.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: -1;
+    display: block;
+}
+
+.card {
+    height: 80%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #2c2c2c;
+    border-radius: 7px; */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin: 6px;
+    padding-left: 23px;
+    text-align: justify;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.form-group button {
+    width: 84%;
+    margin: 10px auto;
+    padding: 7px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: background-color 500ms;
+}
+
+.form-group button:hover {
+    background-color: #0CAA41;
+    border: 1px solid #0CAA41;
+    color: white;
+    transition: background-color 500ms;
+}
+
+#signin-with-google:hover {
+    background-color: white;
+    color: #0CAA41;
+}
+
+#signin-with-google img {
+    content: url('../static/icons/google-black.png');
+    height: 16px;
+}
+
+#signin-with-google:hover img {
+    content: url('../static/icons/google-colored.png');
+    height: 16px;
+}
+
+#signin-with-linkedin:hover {
+    background-color: white;
+    color: #0077B5;
+    border: 1px solid #0077B5;
+}
+
+#signin-with-linkedin img {
+    content: url('../static/icons/linkedin-black.png');
+    height: 16px;
+}
+
+#signin-with-linkedin:hover img {
+    content: url('../static/icons/linkedin-blue.png');
+    height: 16px;
+}
+
+.orSeparator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8%;
+}
+
+.orSeparator .borderTop {
+    border: 1px solid #C4C7CC;
+    width: 100%;
+    padding: 0 5px;
+}
+
+a {
+    color: #0CAA41;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
